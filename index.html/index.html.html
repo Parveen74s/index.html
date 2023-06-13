@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>webpage Desingn</title>
+    <style>
+        /* @import url('style.css'); */
+        *{
+    margin: 0 auto;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJlZHJvb218ZW58MHx8MHx8&w=1000&q=80');
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color:#ff7200;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+
+}
+.menu{
+   width: 400px; 
+   float: left;
+   height: 70px;  
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul>li{
+      list-style: none;
+      margin-left: 62px;
+      margin-top: 27px;
+      font-size: 14px;
+}
+
+ul>li a{
+  text-decoration: none;  
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+
+}
+
+ul li a:hover{
+   color: orange; 
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background:transparent;
+    border: 1px solid orange;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+   width: 100px; 
+   height: 40px;
+   background-color: orange;
+   border:2px solid orange;
+   margin-top: 13px;
+   color: white;
+   font-size: 15px;
+   border-bottom-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 200px;
+    height: auto;
+    margin: 70px;
+    color: white;
+    position: relative;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 1px;
+
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: white;
+}
+.content span{
+    color: orange;
+    font-size: 60px;
+
+}
+.form{
+    width: 250px;
+    height: 380px;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.8)50%); */
+    background-color: #000;
+    position: absolute;
+    top: -20px;
+    left:870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color:orange;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid red;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form iput:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background-color: orange;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.btnn:hover{
+    background-color: white;
+    color: orange;
+}
+.btnn{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: orange;
+}
+.liw{
+   padding-top: 15px; 
+   padding-bottom: 10px;
+   text-align: center;
+}
+.side{
+    width: 300px;
+    height:35px;
+    background-color:rgb(19, 123, 209);
+    display:flex;
+    right: -242px;
+    position: fixed;
+    top: 200px;
+    transition-duration: 0.5s;
+}
+.side>section{
+    flex: 1;
+    padding:5px;
+}
+.side img{
+    width: 30px;
+}
+
+
+.side:hover{
+    right: 70px;
+    transition-duration: 2s;
+}
+.sen{
+    top: 240px;
+}
+.sen1{
+    top: 280px;
+}
+
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color:black;
+    color: white;
+    font-size: 30px;
+}
+
+@media screen and (max-width:1200px) {
+    /*Normal Screen*/
+
+    .navbar{
+        width: 100%;
+        height: 100px;
+    }
+    ul{
+        margin-left: 30px;
+    }   
+    ul li{
+        margin-left: 60px;
+    }
+    ul li a{
+       font-size: 1.6vw; 
+    }
+    .search{
+        margin-top: 3px;
+        margin-left: 290px;
+    }
+    .srch{
+        height: 40px;
+        width: 190px;
+        font-size: 14px;
+    }
+    .btn{
+        height:40px;
+        width: 80px;
+    }
+    .content{
+        width: 100%;
+    }
+    .content h1, .content span{
+        font-size: 4.5vw; 
+    }
+    .content .par{
+        width: 90%;
+        font-size: 1.5vw;
+    }
+    .content .cn{
+        width: 13%;
+        height: 3.5vw;
+        font-size: 1.8vw;
+    }
+    .content a{
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width:1170px) {
+    /*Login-box*/
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    }
+    .form{
+        margin-left: -30px;
+        width: 250px;
+        height: 370px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        position: absolute;
+        top: 420px;
+        left: 50px;
+        transform: translate(0%,-5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+    .form input{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid #ff7200;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    .btnn a{
+        font-size: 16px;
+    }
+    .form .link a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 830px){
+    /*For tablet*/
+   
+    .content{
+        margin-top: 120px;
+        width: 80%;   
+        margin-left: 40px;  
+    }
+    .content h1, .content span{
+        font-size: 6vw; 
+    }
+    .content .par{
+        width: 90%;
+        font-size: 1.8vw;
+    }
+    .content .cn{
+        width: 15%;
+        height: 4.5vw;
+        font-size: 2vw;
+    }
+    .content a{
+        font-size: 2vw
+    }
+    .logo{
+        margin-left: 240px;
+        width: 100%;
+        margin-top: 15px;
+        font-size: 5vw;
+    }
+    .menu{
+        width: 100%;
+    }
+    ul{
+        margin-top: -5px;
+        margin-left: 5px;
+    }
+    ul li{
+        margin-left: 60px;
+    }
+    ul li a{
+       font-size: 2vw; 
+    }
+    .search{
+        margin-top: -20px;
+        margin-left: 60px;   
+    }   
+    .srch{
+        height: 30px;
+        width: 160px;
+        font-size: 12px;
+    }
+    .btn{
+        height:30px;
+        width: 70px;
+    }
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    }
+    .form{
+        margin-left: -30px;
+        width: 250px;
+        height: 370px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        position: absolute;
+        top: 430px;
+        left: 50px;
+        transform: translate(0%,-5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+    .form input{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid #ff7200;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    .btnn a{
+        font-size: 16px;
+    }
+    .form .link a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /*IPAD*/
+    
+    .content{
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    .search{
+        margin-top: -40px;
+        margin-left: 42px;
+    }
+    .logo{
+        margin-left: 180px;
+        font-size: 4vw;
+    }
+    ul{
+        margin-top: -25px;
+        margin-left: -5px;
+    }
+    ul li {
+        margin-left: 50px;
+    }
+    ul li a{
+        font-size: 2vw;
+    }   
+}
+
+@media screen and (max-width: 450px){
+    /*mobile*/
+    .logo{
+        margin-left: 140px;
+        font-size: 4vw;
+    }
+    ul{
+        margin-top: -25px;
+    }
+    ul li {
+        margin-left: 42px;
+    }
+    ul li a{
+        font-size: 2vw;
+    }  
+    .search{
+        margin-top: -40px;
+        margin-left: 38px;
+    } 
+    .side{
+        margin-left: -40px;
+        
+    }
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">CpRoZ</h1>
+            </div>
+
+            <div class="menu">
+               <ul>
+                   <li><a href="#">HOME</a></li>
+                   <li><a href="#">ABOUT</a></li>
+                   <li><a href="#">SERVICE</a></li>
+                   <li><a href="#">DESING</a></li>
+                   <li><a href="#">CONTACT</a></li>
+               </ul> 
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type of text">
+                <a href="#"> <button class="btn">search</button></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Web Desing & <br><span>Development</span>Course</h1>
+            <p class="par">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Dolorum quod aut accusamus quas placeat consequuntur deleniti. Laudantium ullam Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, debitis. <br></p>
+
+            <button class="cn"><a href="#">join us </a></button>
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="Email" name=""placeholder="Enter email here">
+                <input type="Password" name=""placeholder="Enter password here">
+                <button class="btnn"><a href="#">login</a></button>
+                <p class="link">Don't have an account<br>
+                <a href="#">sing</a> up Here</a></p>
+                <p class="liw">log in with</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        alert("you are join");
+    </script>
+    
+    <!-- <div>
+
+        <div class="side">
+            <section><img src="https://ci6.googleusercontent.com/proxy/RX7TN95FL-5NRiBf2BZge12iuv-BeHdQ7zbVUGlUqmej8N9wPmOwQmUUNehNOAciPsPsDiOM-fUHyPeGDSJKtO4qGevgPrKAf6r1FWNDxhKHH-V7zUYeYG0DMY7hUDY=s0-d-e1-ft#https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-facebook_-512.png"></section>
+            <section><a href="http://facbook.com">facbook link </a></section>
+        </div>
+
+        <div class="side sen">
+            <section><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"></section>
+            <section> <a href="https://instagram.com">instgram link</a></section>
+        </div>
+
+        <div class="side sen1">
+            <section><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"></section>
+            <section> <a href="https://twitter.com">twitter link ta</a></section>
+         </div>
+
+    <footer>
+        <a href="#">footer@example.com</a>
+    </footer> -->
+</body>
+</html>
